@@ -62,13 +62,14 @@ You will need to install the following locally:
 Complete a month cost analysis of each Azure resource to give an estimate total cost using the table below:
 
 | Azure Resource                    | Service Tier | Monthly Cost |
-| --------------------------------- | ------------ | ------------ |
-| *Azure Postgres Database*         |              |              |
-| *Azure Service Bus queue*         |              |              |
-| *Azure Web App*                   |              |              |
-| *Azure DB for PostgreSQL server*  |              |              |
-| *Azure Storage Account*           |              |              |
-| *Azure Function App*              |              |              |
+| --------------------------------- | ----------------- | -------------- |
+| *Azure Service Bus queue*         |Service bus        |       25       |
+| *Azure Web App*                   |F1 Free            |       12       |
+| *Azure DB for PostgreSQL server*  |Vcore-data stored  |       12       |
+| *Azure Storage Account*           |storagge bandwidth |       25       |
+| *Azure Function App*              |Consumption        |       12       |
+
+
 
 ## Architecture Explanation
-This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
+The reason we selected this architecture is to leverage the microservices offered by azure and scale the app if it get high request demand. it allows us to decouple app functions and allows for a ci/cd deployment workload.
