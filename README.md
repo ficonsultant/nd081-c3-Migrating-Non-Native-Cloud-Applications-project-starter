@@ -39,7 +39,7 @@ You will need to install the following locally:
       - `SERVICE_BUS_CONNECTION_STRING`
 4. Create App Service plan
 5. Create a storage account
-6. Deploy the web app
+6. Deploy the web app.
 
 ### Part 2: Create and Publish Azure Function
 1. Create an Azure Function in the `function` folder that is triggered by the service bus queue created in Part 1.
